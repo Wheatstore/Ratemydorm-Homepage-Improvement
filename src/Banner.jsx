@@ -9,7 +9,7 @@ function Banner() {
             <div className='banner-container'>
                 <div className='banner-image-container'>
                     <img 
-                        src="/banner2.png"
+                        src="/Ratemydorm Website Banner Transformed.png"
                         alt="Banner"
                         className="banner-image"
                     />
@@ -23,8 +23,7 @@ function Banner() {
                             </div> */}
     
                             <form>
-                                <input className='search-school-input' type='text' placeholder='Search for your school here' />
-                                <button className='search-button' type='submit'>Search</button>
+                                <input className='search-school-input' type='text' placeholder='🔍 Search for your school here' />
                             </form>
                         </div>
                     </div>

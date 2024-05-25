@@ -11,7 +11,7 @@ function App() {
       <>
         <Navigation />
         <Banner />
-        
+        <div className='spacing'></div>
         <Features />
     </>
 )
