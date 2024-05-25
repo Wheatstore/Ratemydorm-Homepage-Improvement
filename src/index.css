@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  margin-top: 2em;
+  width: 98%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  border-bottom: 2px solid grey ;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Adds shadow for 3D effect */
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.signup-button { /* Enable relative positioning */
+  margin-top: 30em;
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  background-color: #2596be; /* Green background for the button */
+  border-radius: 4px;
+  position: relative;
+}
+
+.signup-button:hover {
+  background-color: #4557a0; /* Darker green on hover */
+}

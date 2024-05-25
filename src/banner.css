@@ -1,0 +1,150 @@
+/* Container Styling */
+.banner-container {
+    height: 10px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* Image Container Styling */
+.banner-image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 60%; /* Adjust according to your image aspect ratio */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* Image Styling */
+.banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+/* Overlay Styling */
+.overlay { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Ensure the text is visible on the overlay */
+}
+
+/* Search Title Styling */
+.search-title-div {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.search-img-div{
+    margin-bottom: 0;
+}
+
+.search-img{
+    height: 3em;
+    margin-bottom: 0;
+}
+
+.search-title{
+    font-size: xx-large;
+}
+/* Search Input Styling */
+.search-school {
+    text-align: center;
+    border-radius: 8px;
+}
+
+
+.search-input::selection {
+    color: white;
+}
+
+.search-school-input {
+    width: 45em;
+    height: 2.5em;
+    padding: 0.5em;
+    font-size: 1em;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 2em;
+    align-items: center;
+}
+
+/* Search Button Styling */
+.search-button {
+    margin-top: 1em;
+    margin-left: 10px;
+    padding: 0.7em 1em;
+    font-size: 1.5em;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .search-title {
+        font-size: 2.5em;
+    }
+    .banner-image-container{
+        width: 100%;
+    }
+    .search-school-input {
+        width: 30em;
+        height: 1.8em;
+        font-size: 0.9em;
+    }
+    
+    .search-button {
+        font-size: 0.9em;
+        padding: 0.6em 0.9em;
+    }
+    .banner-image {
+        max-width: fit-content;
+        margin-right: auto;
+        top: 0;
+        left: 0;
+        margin-left: 8px;
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .search-title {
+        font-size: 2em;
+    }
+
+    
+    .search-school-input {
+        width: 20em;
+        height: 1.5em;
+        font-size: 0.8em;
+    }
+    
+    .search-button {
+        font-size: 0.8em;
+        padding: 0.5em 0.8em;
+    }
+}
