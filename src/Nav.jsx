@@ -1,3 +1,5 @@
+import './index.css'
+
 function Navigation() {
     return (
         <div className="navbar">

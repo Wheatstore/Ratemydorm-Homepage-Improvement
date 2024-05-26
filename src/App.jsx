@@ -4,6 +4,7 @@ import Navigation from './Nav'
 import Banner from './Banner'
 import Features from './Features'
 import SchoolCard from './Card'
+import Footer from './footer'
 
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
         <div className="spacing"></div>
         <SchoolCard />
         <Features />
+        <Footer />
+        
     </>
 )
 }

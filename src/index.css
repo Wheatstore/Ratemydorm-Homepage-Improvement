@@ -32,10 +32,11 @@ body {
   text-decoration: none;
   padding: 14px 20px;
   background-color: rgba(92, 171, 223); /* Green background for the button */
-  border-radius: 15px;
+  border-radius: 30px;
   position: relative;
+  transition: 0.5s ease;
 }
 
-.signup-button:hover {
-  background-color: #4557a0; /* Darker green on hover */
+.signup-button:hover { 
+  transform: scale(1.1);
 }

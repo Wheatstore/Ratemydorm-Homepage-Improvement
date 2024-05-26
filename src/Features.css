@@ -33,11 +33,18 @@
     font-weight: bolder;
     font-family: "Roboto", sans-serif;
     margin-bottom: 30px;
+    animation: fadeIn 5s;
 }
+
 .title-description{
     margin-top: 15px;
     font-size: 1.5em;
     margin-bottom: 30px;
+    animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .feature-container{
@@ -45,6 +52,8 @@
     background-image: url(/Features-background--.png);
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat;
+    overflow: auto;
+    background-attachment: fixed;
 }
 
 .feature-img{
@@ -65,7 +74,13 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column; /* Stack children vertically */
+    transition: transform 0.3s ease;
 }
+
+.feature-box:hover{
+    transform: scale(1.1);
+}
+
 
 .sign-up{
     width: 10em;
@@ -76,6 +91,11 @@
     color: white;
     font-size: 17px;
     font-weight: bolder;
+    transition: 0.5s ease;
+    
+}
+.sign-up:hover{
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 768px) {

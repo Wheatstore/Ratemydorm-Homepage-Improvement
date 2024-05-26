@@ -1,3 +1,26 @@
+.card-title {
+    text-align: center;
+    width: 100%;
+}
+
+.card-heading{
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 3.5em;
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    animation: fadeIn 5s;
+}
+
 .card {
     border: 1px transparent;
     border-radius: 10px;
@@ -6,11 +29,29 @@
     width: calc(20% - 20px); /* Adjusted width */
     padding: 0;
     position: relative;
+    opacity: 0; /* Initial opacity */
+    transition: opacity 4s ease-in; /* Transition effect */
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+.card.fade-in {
+    opacity: 1; /* Final opacity */
+}
+
+.title.fade-in {
+    opacity: 1; /* Final opacity */
+}
+
+.card:hover {
+    background-color: rgba(124, 132, 138, 0.454);
 }
 
 .card-container {
     display: flex;
-    flex-wrap: wrap;        
+    flex-wrap: wrap;
     justify-content: space-around; /* Adjust as needed */
 }
 
@@ -21,9 +62,9 @@
 
 .university-img {
     width: 100%; /* Make the image fill the container */
-    height: 300px; 
+    height: 300px;
     border: 1px;
-    border-top-left-radius: 10px;   
+    border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     object-fit: cover;
 }

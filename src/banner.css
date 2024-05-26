@@ -4,7 +4,6 @@
     width: 100%;
     margin: 0 auto;
     background-color: #f8f9fa;
-    border-radius: 8px;
 }
 
 /* Image Container Styling */
@@ -13,7 +12,7 @@
     width: 100%;
     height: 100%; /* Ensure it takes the full height of the banner-container */
     overflow: hidden;
-    border-radius: 8px;
+
 }
 
 /* Image Styling */
@@ -81,12 +80,14 @@
     text-align: start;
     width: 438px;
     -webkit-font-smoothing: antialiased;
+    transition: 0.5s ease-in-out;
+}
+
+.search-school-input:hover{
+    transform: scale(1.1);
 }
 
 /* Search Button Styling */
-.search-button:hover {
-    background-color: #0056b3;
-}
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
