@@ -1,3 +1,77 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .spacing{
-    height: 560px;
+    height: 2em;
+    background-color: white;
+}
+
+/* Banner Styling */
+.banner-container {
+    width: 100%;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2em; /* Add margin bottom to separate it from the features */
+    height: 60vh; /* Adjust height as needed */
+}
+
+.banner-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Ensure it takes the full height of the banner-container */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensure it covers the full height */
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Ensure the text is visible on the overlay */
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .banner-image {
+        height: 100%; /* Ensure it covers the full height */
+    }
+    
+    .features {
+        padding: 1em 0;
+    }
+    
+    .feature h1 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .features {
+        padding: 0.5em 0;
+    }
+    
+    .feature h1 {
+        font-size: 1em;
+    }
 }

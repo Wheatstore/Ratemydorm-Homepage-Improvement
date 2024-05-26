@@ -3,6 +3,7 @@ import './App.css'
 import Navigation from './Nav'
 import Banner from './Banner'
 import Features from './Features'
+import SchoolCard from './Card'
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
       <>
         <Navigation />
         <Banner />
-        <div className='spacing'></div>
+        <div className="spacing"></div>
+        <SchoolCard />
         <Features />
     </>
 )
