@@ -31,8 +31,8 @@ body {
   color: white;
   text-decoration: none;
   padding: 14px 20px;
-  background-color: #2596be; /* Green background for the button */
-  border-radius: 4px;
+  background-color: rgba(92, 171, 223); /* Green background for the button */
+  border-radius: 15px;
   position: relative;
 }
 

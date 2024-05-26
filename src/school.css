@@ -1,0 +1,41 @@
+.card {
+    border: 1px transparent;
+    border-radius: 10px;
+    margin: 10px; /* Adjusted margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(20% - 20px); /* Adjusted width */
+    padding: 0;
+    position: relative;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;        
+    justify-content: space-around; /* Adjust as needed */
+}
+
+.content {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.university-img {
+    width: 100%; /* Make the image fill the container */
+    height: 300px; 
+    border: 1px;
+    border-top-left-radius: 10px;   
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Adjusted width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: calc(100% - 20px); /* Adjusted width for even smaller screens */
+    }
+}
