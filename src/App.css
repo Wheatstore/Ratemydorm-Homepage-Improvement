@@ -50,6 +50,39 @@ body {
     color: white; /* Ensure the text is visible on the overlay */
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(136, 131, 131, 0.188);
+    height: fit-content; /* Adjust the height as needed */
+  }
+  
+.footer-logo {
+    width: 100%; /* Adjust the width of the logo */
+}
+  
+.github-link {
+    margin-top: 10px; /* Adjust the spacing between the logo and the text */
+}
+
+a{
+    font-size: 16px;
+    color: black;
+}
+
+h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+}
+
+.spacing2{
+    height: 80px;
+}
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {

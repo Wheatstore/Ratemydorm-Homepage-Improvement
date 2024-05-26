@@ -16,7 +16,9 @@ function App() {
         <div className="spacing"></div>
         <SchoolCard />
         <Features />
+        <div className="spacing2"></div>
         <Footer />
+        
         
     </>
 )
